@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <!-- LEFT SIDE OF SPOTIFY  -->
+        <div class="left ">
+            <div class="home bg-grey rounded m-1 p-1">
+                <img class="invert cross" src="cross.svg" alt="">
+                <div class="logo">
+                    <img class="invert" src="spotify.svg" alt="">
+                </div>
+                <ul>
+                    <li class="mm"><img class="invert" src="home.svg" alt="Home">Home</li>
+                    <li class="mn"><img class="invert" src="search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="library.svg" alt="library">
+                    <p class="lib">Your library</p>
+                    <img class="invert plus" src="plus.svg" alt="">
+                </div>
+                <div class="songlists">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                    <button class="signup-button eng"><img class="invert" src="earth.svg" alt="" width="23px"
+                            height="13px">English</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE OF SPOTIFY -->
+        <div class="right bg-grey border">
+            <div class="header">
+                <div class="hamburger">
+                    <img class="invert" src="hamburger.svg" alt="">
+                </div>
+                <div class="nav">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 4L8.66943 10.0405C6.44352 11.6545 6.44353 12.3455 8.66943 13.9595L17 20"
+                            stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 4L15.3306 10.0405C17.5565 11.6545 17.5565 12.3455 15.3306 13.9595L7 20"
+                            stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signup-button">Sign up</button>
+                    <button class="login-button">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <!-- card-1 -->
+                    <div data-folder="Dinner_With_Friends" class="card">
+                        <svg class="play" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #1FDF64; border-radius: 50%; padding: 8px;">
+                            <path
+                                d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" fill="#141B34" />
+                        </svg>
+                        <img src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
+                        <h3>Dinner with Friends</h3>
+                        <p>The perfect soundtrack to those long nights over dinner.</p>
+                    </div>
+                    <!-- card-2 -->
+                    <div data-folder="Dinner_Jazz" class="card">
+                        <svg class="play" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #1FDF64; border-radius: 50%; padding: 8px;">
+                            <path
+                                d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" fill="#141B34" />
+                        </svg>
+                        <img src="https://i.scdn.co/image/ab67706f00000002a98e80d2fc9b1cf3b80c4481" alt="">
+                        <h3>Dinner Jazz</h3>
+                        <p>The gentle sound of some of the greatest voices and instrumentalists in Jazz. Your Jazz
+                            dinner soundtrack. </p>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="card">
+                        <svg class="play" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #1FDF64; border-radius: 50%; padding: 8px;">
+                            <path
+                                d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" fill="#141B34" />
+                        </svg>
+                        <img src="	https://i.scdn.co/image/ab67706f000000027cd703bbfec2f1e86c879bec" alt="">
+                        <h3>Dinner Lounge</h3>
+                        <p>Soft electronic music for your dinner.</p>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="card">
+                        <svg class="play" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #1FDF64; border-radius: 50%; padding: 8px;">
+                            <path
+                                d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" fill="#141B34" />
+                        </svg>
+                        <img src="	https://i.scdn.co/image/ab67706f000000022ba865eb4204be02ce3e8e09" alt="">
+                        <h3>Feel Good Dinner</h3>
+                        <p>An uplifting yet tasteful dinner playlist with a guaranteed feel good vibe.</p>
+                    </div>
+                    <!-- card-5 -->
+                    <div class="card">
+                        <svg class="play" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #1FDF64; border-radius: 50%; padding: 8px;">
+                            <path
+                                d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" fill="#141B34" />
+                        </svg>
+                        <img src="https://i.scdn.co/image/ab67706f00000002dd9acb211caf8703ea9bfc98" alt="">
+                        <h3>Bossa Nova Dinner</h3>
+                        <p>Soundtrack your cozy dinner with bossa nova jazz.</p>
+                    </div>
+                    <!-- card-6 -->
+                    <div class="card">
+                        <svg class="play" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #1FDF64; border-radius: 50%; padding: 8px;">
+                            <path
+                                d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" fill="#141B34" />
+                        </svg>
+                        <img src="https://i.scdn.co/image/ab67706f000000028dc9fe0c14e5f34ad165e3c2" alt="">
+                        <h3>Kitchen Swagger</h3>
+                        <p>Gettin' figgy with it, bana-na-na-nanana</p>
+                    </div>
+                    <!-- card-7 -->
+                    <div class="card">
+                        <svg class="play" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #1FDF64; border-radius: 50%; padding: 8px;">
+                            <path
+                                d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" fill="#141B34" />
+                        </svg>
+                        <img src="https://i.scdn.co/image/ab67706f000000024b69d5ba7d5a9940475c3ef2" alt="">
+                        <h3>Soulful Dinner</h3>
+                        <p>Classic and new soul music for the perfect dinner.</p>
+                    </div>
+                    <!-- card-8 -->
+                    <div class="card">
+                        <svg class="play" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #1FDF64; border-radius: 50%; padding: 8px;">
+                            <path
+                                d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" fill="#141B34" />
+                        </svg>
+                        <img src="https://i.scdn.co/image/ab67706f0000000287b494983f83013197bdb4eb" alt="">
+                        <h3>Dinner & Chill</h3>
+                        <p>Gentle Indie songs for a relaxed dinner.</p>
+                    </div>
+                    <!-- card-9 -->
+                    <div class="card">
+                        <svg class="play" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #1FDF64; border-radius: 50%; padding: 8px;">
+                            <path
+                                d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" fill="#141B34" />
+                        </svg>
+                        <img src="https://i.scdn.co/image/ab67706f000000024b04e77913de1fc2a4b819df" alt="">
+                        <h3>Beer & Wings</h3>
+                        <p>Cold beer. Hot wings. Great rock. </p>
+                    </div>
+                    <!-- card-10 -->
+                    <div class="card">
+                        <svg class="play" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #1FDF64; border-radius: 50%; padding: 8px;">
+                            <path
+                                d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" fill="#141B34" />
+                        </svg>
+                        <img src="https://i.scdn.co/image/ab67706f000000029b14583a15b3047fee20d36b" alt="">
+                        <h3>Latin Dinner</h3>
+                        <p>You bring the ingredients, we bring the flavor. Enjoy la cena...</p>
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="circle"></div>
+                    <div class="seekbar">
+                        <div class="songinfo">
+                        </div>
+                        <div class="songbutton">
+                            <img id="prev" class="invert" src="previous.svg" alt="previous song">
+                            <img id="play" class="song invert" src="play.svg" alt="play">
+                            <img id="next" class="invert" src="next.svg" alt="next song">
+                        </div>
+                        <div class="songtime">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
